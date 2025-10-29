@@ -1,13 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-<!-- Mirrored from themewagon.github.io/charityworks/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Oct 2025 15:22:31 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Charity | Teamplate</title>
-    <meta name="description" content="">
+    <title>About Us - Global Rise Foundation</title>
+    <meta name="description" content="Learn about Global Rise Foundation's mission to empower communities and transform lives through education, healthcare, and sustainable development.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.html">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -27,9 +25,344 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        /* Custom styles for About page - GRF Logo Colors */
+        :root {
+            --primary-blue: #4A9FD8;
+            --secondary-green: #8BAF3C;
+            --dark-text: #2C3E50;
+            --light-bg: #F8F9FA;
+        }
+        
+        .logo img {
+            max-height: 50px;
+            width: auto;
+        }
+        
+        /* Make header smaller */
+        .header-top {
+            padding: 8px 0 !important;
+            font-size: 13px;
+        }
+        
+        .header-top ul li {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+        
+        .header-bottom {
+            padding: 10px 0 !important;
+        }
+        
+        .main-menu ul li {
+            padding: 0 15px;
+        }
+        
+        .main-menu ul li a {
+            padding: 15px 0 !important;
+            font-size: 15px;
+        }
+        
+        .header-btn {
+            padding: 15px 45px !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+        }
+        
+        /* Align logo to right */
+        .logo {
+            padding-left: 30px;
+        }
+        
+        .hero-about {
+            background: linear-gradient(135deg, #4A9FD8 0%, #8BAF3C 100%);
+            padding: 100px 0 80px;
+        }
+        
+        .hero-about h1 {
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .hero-about p {
+            color: rgba(255,255,255,0.95);
+            font-size: 18px;
+        }
+        
+        .story-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .story-content {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(74, 159, 216, 0.15);
+            border-left: 5px solid var(--primary-blue);
+        }
+        
+        .story-content h3 {
+            color: var(--primary-blue);
+            font-size: 32px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .story-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .values-section {
+            padding: 80px 0;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(74, 159, 216, 0.1);
+            height: 100%;
+            transition: all 0.3s ease;
+            border-top: 3px solid var(--primary-blue);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(74, 159, 216, 0.2);
+            border-top-color: var(--secondary-green);
+        }
+        
+        .value-card .icon {
+            font-size: 50px;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .value-card:hover .icon {
+            color: var(--secondary-green);
+        }
+        
+        .value-card h4 {
+            color: var(--dark-text);
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .value-card p {
+            color: #7f8192;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .team-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .team-member {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .team-member-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            overflow: hidden;
+            border: 5px solid var(--primary-blue);
+            box-shadow: 0 10px 25px rgba(74, 159, 216, 0.2);
+            transition: border-color 0.3s ease;
+        }
+        
+        .team-member:hover .team-member-img {
+            border-color: var(--secondary-green);
+        }
+        
+        .team-member-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-member h4 {
+            color: var(--dark-text);
+            font-size: 22px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .team-member .position {
+            color: var(--primary-blue);
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .team-member p {
+            color: #7f8192;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .impact-stats {
+            background: linear-gradient(135deg, var(--dark-text) 0%, #34495e 100%);
+            padding: 80px 0;
+            color: white;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .stat-box .number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        
+        .stat-box .label {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #4A9FD8 0%, #8BAF3C 100%);
+            position: relative;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+        
+        .cta-content h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .cta-content p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            color: white;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-buttons .btn {
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .cta-buttons .btn.header-btn {
+            background: white;
+            color: var(--primary-blue);
+            border: 2px solid white;
+        }
+        
+        .cta-buttons .btn.white-btn {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .cta-buttons .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .approach-section {
+            padding: 80px 0;
+        }
+        
+        .approach-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        
+        .approach-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-right: 25px;
+        }
+        
+        .approach-content h4 {
+            color: var(--dark-text);
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .approach-content p {
+            color: #7f8192;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .section-tittle span {
+            color: var(--secondary-green);
+        }
+        
+        .section-tittle h2 {
+            color: var(--dark-text);
+        }
+        
+        .about-caption .section-tittle span {
+            color: var(--primary-blue);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-about h1 {
+                font-size: 36px;
+            }
+            
+            .story-content {
+                padding: 30px 20px;
+            }
+            
+            .cta-content h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <!-- ? Preloader Start -->
+    <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
@@ -40,28 +373,21 @@
             </div>
         </div>
     </div>
-    <!-- Preloader Start -->
+    <!-- Preloader End -->
+    
     <header>
         <!-- Header Start -->
         <div class="header-area">
-            <div class="main-header ">
+            <div class="main-header">
                 <div class="header-top d-none d-lg-block">
                     <div class="container-fluid">
                         <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="header-info-left d-flex">
                                     <ul>     
-                                        <li>Phone: +99 (0) 101 0000 888</li>
-                                        <li>Email: noreply@yourdomain.com</li>
+                                        <li>Phone: +91 1234567890</li>
+                                        <li>Email: info@globalrisefoundation.org</li>
                                     </ul>
-                                    <div class="header-social">    
-                                        <ul>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="header-info-right d-flex align-items-center">
                                     <div class="select-this">
@@ -69,46 +395,40 @@
                                             <div class="select-itms">
                                                 <select name="select" id="select1">
                                                     <option value="">English</option>
-                                                    <option value="">Bangla</option>
-                                                    <option value="">Arabic</option>
                                                     <option value="">Hindi</option>
                                                 </select>
                                             </div>
                                         </form>
                                     </div>
-                                    <ul class="contact-now">     
+                                    <!-- <ul class="contact-now">     
                                         <li><a href="#">Subscribe Now</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="header-bottom  header-sticky">
+                <div class="header-bottom header-sticky">
                     <div class="container-fluid">
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/img/logo/grflogo.jpg" alt="Global Rise Foundation"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
                                                 <li><a href="index.html">Home</a></li>
                                                 <li><a href="about.html">About</a></li>
-                                                <li><a href="program.html">latest causes</a></li>
-                                                <li><a href="events.html">social events </a></li>
+                                                <li><a href="program.html">Latest Causes</a></li>
+                                                <li><a href="events.html">Social Events</a></li>
                                                 <li><a href="blog.html">Blog</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog_details.html">Blog Details</a></li>
-                                                        <li><a href="elements.html">Element</a></li>
-                                                    </ul>
+                                                 
                                                 </li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
@@ -131,382 +451,472 @@
         </div>
         <!-- Header End -->
     </header>
-    <!-- header end -->
+    
     <main>
-    <!--? Hero Start -->
-    <div class="slider-area2">
-        <div class="slider-height2 d-flex align-items-center">
+        <!-- Hero Section -->
+        <section class="hero-about">
             <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1>About Global Rise Foundation</h1>
+                        <p>Empowering communities, transforming lives, and building a brighter future together</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="story-content">
+                            <h3>Our Story</h3>
+                            <p>Global Rise Foundation was born from a simple yet powerful belief: that every individual, regardless of their circumstances, deserves access to opportunities that can transform their lives. Founded in 2024 by a group of passionate changemakers, our organization emerged from witnessing the stark inequalities that exist in our communities.</p>
+                            
+                            <p>What started as small community initiatives has grown into a movement dedicated to creating sustainable change. We saw children unable to attend school due to lack of resources, families without access to clean water, and communities struggling with healthcare challenges. These observations fueled our determination to make a difference.</p>
+                            
+                            <p>Today, Global Rise Foundation stands as a beacon of hope for underserved communities across Uttar Pradesh and beyond. We work tirelessly to address the root causes of poverty and inequality, implementing programs that don't just provide temporary relief, but create lasting pathways to prosperity and self-sufficiency.</p>
+                            
+                            <p>As a newly launched NGO, we bring fresh perspectives and innovative approaches to age-old challenges. Our team combines youthful energy with experienced guidance, ensuring that our initiatives are both dynamic and sustainable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission & Vision Section -->
+        <section class="about-low-area section-padding2">
+            <div class="container">
+                <div class="row justify-content-center mb-60">
+                    <div class="col-xl-8 col-lg-9 col-md-10">
+                        <div class="section-tittle text-center">
+                            <span>Our Foundation</span>
+                            <h2>Mission, Vision & Values</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-80">
+                    <div class="col-lg-6 col-md-12 mb-30">
+                        <div class="about-caption">
+                            <div class="section-tittle mb-35">
+                                <span style="color: #4A9FD8;">Our Mission</span>
+                                <h2>Empowering Communities Through Sustainable Change</h2>
+                            </div>
+                            <p>Our mission is to create lasting positive change in underserved communities by providing essential resources, quality education, and healthcare services. We focus on empowering individuals to break the cycle of poverty and build sustainable futures for themselves and their families.</p>
+                            <p>We believe in a holistic approach that addresses immediate needs while building long-term capacity for self-sufficiency, dignity, and community resilience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-30">
+                        <div class="about-caption">
+                            <div class="section-tittle mb-35">
+                                <span style="color: #8BAF3C;">Our Vision</span>
+                                <h2>A World of Equality and Opportunity</h2>
+                            </div>
+                            <p>We envision a world where every individual has access to basic necessities, quality education, healthcare, and opportunities for personal and professional growth. A world where communities thrive together, supporting one another and creating lasting positive change.</p>
+                            <p>Through collaborative efforts and innovative solutions, we aim to be a catalyst for transformation, inspiring hope and creating pathways to prosperity for generations to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Core Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="row justify-content-center mb-60">
+                    <div class="col-xl-8 col-lg-9 col-md-10">
+                        <div class="section-tittle text-center">
+                            <span>What Drives Us</span>
+                            <h2>Our Core Values</h2>
+                            <p class="mt-3">These values guide every decision we make and every action we take</p>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="hero-cap hero-cap2 pt-20 text-center">
-                            <h2>About US</h2>
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Compassion</h4>
+                            <p>We approach every individual with empathy, understanding, and genuine care for their wellbeing and circumstances.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Integrity</h4>
+                            <p>We maintain the highest standards of transparency, honesty, and accountability in all our operations and relationships.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Inclusion</h4>
+                            <p>We believe in creating opportunities for all, regardless of background, gender, religion, or social status.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-fist-raised"></i>
+                            </div>
+                            <h4>Empowerment</h4>
+                            <p>We focus on building capacity and providing tools that enable communities to become self-sufficient and independent.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p>We embrace creative solutions and modern approaches to address traditional challenges facing communities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Collaboration</h4>
+                            <p>We work in partnership with communities, volunteers, donors, and other organizations to maximize our impact.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>Sustainability</h4>
+                            <p>We design programs that create lasting change and promote environmental responsibility for future generations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="value-card">
+                            <div class="icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>Excellence</h4>
+                            <p>We strive for the highest quality in everything we do, continuously improving our programs and services.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-    <!--? Services Area Start -->
-    <div class="service-area section-padding30">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-80">
-                        <span>What we are doing</span>
-                        <h2>We Are In A Mission To Help The Helpless</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-null-1"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Clean Water</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+        </section>
+        
+        <!-- Our Approach Section -->
+        <section class="approach-section">
+            <div class="container">
+                <div class="row justify-content-center mb-60">
+                    <div class="col-xl-8 col-lg-9 col-md-10">
+                        <div class="section-tittle text-center">
+                            <span>How We Work</span>
+                            <h2>Our Approach to Creating Change</h2>
+                            <p class="mt-3">We follow a systematic, community-centered approach to ensure sustainable impact</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat active text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-think"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Clean Water</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-gear"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Clean Water</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services Area End -->
-    <!--? About Law Start-->
-    <section class="about-low-area section-padding2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-10">
-                    <div class="about-caption mb-50">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-35">
-                            <span>About our foundetion</span>
-                            <h2>We Are In A Mission To  Help Helpless</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,mod tempor incididunt ut labore et dolore magna aliqua. Utnixm, quis nostrud exercitation ullamc.</p>
-                        <p>Lorem ipvsum dolor sit amext, consectetur adipisicing elit, smod tempor incididunt ut labore et dolore.</p>
-                    </div>
-                    <a href="about.html" class="btn">About US</a>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <!-- about-img -->
-                    <div class="about-img ">
-                        <div class="about-font-img d-none d-lg-block">
-                            <img src="assets/img/gallery/about2.png" alt="">
-                        </div>
-                        <div class="about-back-img ">
-                            <img src="assets/img/gallery/about1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Law End-->
-    <!-- Want To work -->
-    <section class="wantToWork-area ">
-        <div class="container">
-            <div class="wants-wrapper w-padding2  section-bg" data-background="assets/img/gallery/section_bg01.png">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-xl-5 col-lg-9 col-md-8">
-                        <div class="wantToWork-caption wantToWork-caption2">
-                            <h2>Lets Chenge The World With Humanity</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4">
-                        <a href="#" class="btn white-btn f-right sm-left">Become A Volunteer</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Want To work End -->
-    <!--? Testimonial Start -->
-    <div class="testimonial-area testimonial-padding">
-        <div class="container">
-            <!-- Testimonial contents -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-10">
-                    <div class="h1-testimonial-active dot-style">
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder">
-                                    <div class="founder-img mb-40">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="approach-item">
+                            <div class="approach-number">1</div>
+                            <div class="approach-content">
+                                <h4>Community Assessment</h4>
+                                <p>We begin by listening to communities, understanding their unique challenges, needs, and aspirations. This ensures our programs are relevant and culturally appropriate.</p>
                             </div>
                         </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder">
-                                    <div class="founder-img mb-40">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">2</div>
+                            <div class="approach-content">
+                                <h4>Collaborative Planning</h4>
+                                <p>We work together with community members, local leaders, and stakeholders to design programs that address root causes and build on existing strengths.</p>
                             </div>
                         </div>
-                        <!-- Single Testimonial -->
-                        <div class="single-testimonial text-center">
-                            <div class="testimonial-caption ">
-                                <!-- founder -->
-                                <div class="testimonial-founder">
-                                    <div class="founder-img mb-40">
-                                        <img src="assets/img/gallery/testimonial.png" alt="">
-                                        <span>Margaret Lawson</span>
-                                        <p>Creative Director</p>
-                                    </div>
-                                </div>
-                                <div class="testimonial-top-cap">
-                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">3</div>
+                            <div class="approach-content">
+                                <h4>Implementation & Training</h4>
+                                <p>We execute programs with dedicated staff and trained volunteers, while also building local capacity through skill development and education.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">4</div>
+                            <div class="approach-content">
+                                <h4>Monitoring & Evaluation</h4>
+                                <p>We continuously track progress, measure impact, and adjust strategies based on data and feedback to ensure maximum effectiveness.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="approach-item">
+                            <div class="approach-number">5</div>
+                            <div class="approach-content">
+                                <h4>Sustainability & Handover</h4>
+                                <p>Our ultimate goal is to empower communities to manage and sustain initiatives independently, ensuring long-term positive outcomes.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-    <!--? Count Down Start -->
-    <div class="count-down-area pt-25 section-bg" data-background="assets/img/gallery/section_bg02.png">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 col-md-12">
-                    <div class="count-down-wrapper" >
-                        <div class="row justify-content-between">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span class="counter color-green">6,200</span>
-                                    <span class="plus">+</span>
-                                    <p class="color-green">Donation</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span class="counter color-green">80</span>
-                                    <span class="plus">+</span>
-                                    <p class="color-green">Fund Raised</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span class="counter color-green">256</span>
-                                    <span class="plus">+</span>
-                                    <p class="color-green">Donation</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <!-- Counter Up -->
-                                <div class="single-counter text-center">
-                                    <span class="counter color-green">256</span>
-                                    <span class="plus">+</span>
-                                    <p class="color-green">Donation</p>
-                                </div>
-                            </div>
+        </section>
+        
+        <!-- Impact Stats Section -->
+        <section class="impact-stats">
+            <div class="container">
+                <div class="row justify-content-center mb-50">
+                    <div class="col-xl-8 col-lg-9 col-md-10">
+                        <div class="section-tittle text-center">
+                            <span style="color: #4A9FD8;">Our Impact</span>
+                            <h2 style="color: white;">Making a Difference Together</h2>
+                            <p style="color: rgba(255,255,255,0.9);" class="mt-3">Since our launch, we've been working tirelessly to create positive change</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="stat-box">
+                            <div class="number">500+</div>
+                            <div class="label">Lives Touched</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="stat-box">
+                            <div class="number">15+</div>
+                            <div class="label">Active Projects</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="stat-box">
+                            <div class="number">50+</div>
+                            <div class="label">Dedicated Volunteers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-30">
+                        <div class="stat-box">
+                            <div class="number">10+</div>
+                            <div class="label">Communities Served</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Count Down End -->
+        </section>
+        
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="row justify-content-center mb-60">
+                    <div class="col-xl-8 col-lg-9 col-md-10">
+                        <div class="section-tittle text-center">
+                            <span>Meet Our Team</span>
+                            <h2>The People Behind Our Mission</h2>
+                            <p class="mt-3">Dedicated individuals working together to create lasting change</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <div class="team-member-img">
+                                <img src="assets/img/gallery/about1.png" alt="Team Member">
+                            </div>
+                            <h4>Rajesh Kumar</h4>
+                            <div class="position">Founder & Director</div>
+                            <p>Passionate about social change with 10+ years of experience in community development and nonprofit management.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <div class="team-member-img">
+                                <img src="assets/img/gallery/about2.png" alt="Team Member">
+                            </div>
+                            <h4>Priya Sharma</h4>
+                            <div class="position">Program Coordinator</div>
+                            <p>Expert in education initiatives and youth empowerment with a background in social work and child development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <div class="team-member-img">
+                                <img src="assets/img/gallery/case1.png" alt="Team Member">
+                            </div>
+                            <h4>Amit Verma</h4>
+                            <div class="position">Healthcare Coordinator</div>
+                            <p>Medical professional dedicated to improving healthcare access in rural communities and underserved areas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-member">
+                            <div class="team-member-img">
+                                <img src="assets/img/gallery/case2.png" alt="Team Member">
+                            </div>
+                            <h4>Neha Patel</h4>
+                            <div class="position">Community Outreach Manager</div>
+                            <p>Specialist in grassroots mobilization and building strong relationships with local communities and stakeholders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join Us in Creating Change</h2>
+                    <p>Together, we can build a better future for those who need it most. Your support can transform lives.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn header-btn">Become a Volunteer</a>
+                        <a href="contact.html" class="btn white-btn">Make a Donation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
+    
     <footer>
-        <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
-            <!-- Footer Top-->
+        <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer-bg.png">
+            <!-- Footer Start-->
             <div class="footer-area footer-padding">
                 <div class="container">
-                    <div class="row d-flex justify-content-between">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+                                    <!-- logo -->
+                                    <div class="footer-logo mb-35">
+                                        <a href="index.html"><img src="assets/img/logo/grflogo.jpg" alt="" style="max-height: 70px;"></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p>Making a difference, one life at a time. Join us in our mission to create positive change.</p>
+                                        </div>
+                                    </div>
+                                    <!-- social -->
+                                    <div class="footer-social">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="program.html">Our Programs</a></li>
+                                        <li><a href="contact.html">Get Involved</a></li>
+                                        <li><a href="contact.html">Donate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <div class="footer-tittle">
-                                    <div class="footer-logo mb-20">
-                                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Contact Info</h4>
+                                    <h4>Support</h4>
                                     <ul>
-                                        <li>
-                                            <p>Address :Your address goes here, your demo address.</p>
-                                        </li>
-                                        <li><a href="#">Phone : +8880 44338899</a></li>
-                                        <li><a href="#">Email : info@colorlib.com</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Important Link</h4>
-                                    <ul>
-                                        <li><a href="#"> View Project</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Testimonial</a></li>
-                                        <li><a href="#">Proparties</a></li>
-                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Volunteer</a></li>
+                                        <li><a href="#">Partner With Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">FAQ</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Newsletter</h4>
-                                    <div class="footer-pera footer-pera2">
-                                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
-                                </div>
-                                <!-- Form -->
-                                <div class="footer-form" >
-                                    <div id="mc_embed_signup">
-                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                        method="get" class="subscribe_form relative mail_part">
-                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = ' Email Address '">
-                                            <div class="form-icon">
-                                                <button type="submit" name="submit" id="newsletter-submit"
-                                                class="email_icon newsletter-submit button-contactForm"><img src="assets/img/gallery/form.png" alt=""></button>
-                                            </div>
-                                            <div class="mt-10 info"></div>
-                                        </form>
-                                    </div>
-                                </div>
+                                    <h4>Contact Us</h4>
+                                    <ul>
+                                        <li><a href="#">+91 1234567890</a></li>
+                                        <li><a href="#">info@globalrisefoundation.org</a></li>
+                                        <li><a href="#">Prayagraj, Uttar Pradesh, India</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- footer-bottom -->
+            <!-- footer-bottom area -->
             <div class="footer-bottom-area">
                 <div class="container">
                     <div class="footer-border">
-                        <div class="row d-flex justify-content-between align-items-center">
-                            <div class="col-xl-10 col-lg-9 ">
-                                <div class="footer-copy-right">
-                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3">
-                                <div class="footer-social f-right">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fas fa-globe"></i></a>
-                                    <a href="#"><i class="fab fa-behance"></i></a>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="footer-copy-right text-center">
+                                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Global Rise Foundation. All rights reserved</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Footer End-->
         </div>
     </footer>
-
+    
     <!-- Scroll Up -->
-    <div id="back-top" >
+    <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
 
     <!-- JS here -->
-
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- Jquery, Popper, Bootstrap -->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Jquery Mobile Menu -->
     <script src="assets/js/jquery.slicknav.min.js"></script>
-
-    <!-- Jquery Slick , Owl-Carousel Plugins -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    <!-- One Page, Animated-HeadLin -->
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/animated.headline.js"></script>
     <script src="assets/js/jquery.magnific-popup.js"></script>
-
-    <!-- Date Picker -->
     <script src="assets/js/gijgo.min.js"></script>
-    <!-- Nice-select, sticky -->
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/jquery.sticky.js"></script>
-    <!-- Progress -->
-    <script src="assets/js/jquery.barfiller.js"></script>
-    
-    <!-- counter , waypoint,Hover Direction -->
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.countdown.min.js"></script>
     <script src="assets/js/hover-direction-snake.min.js"></script>
-
-    <!-- contact js -->
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/jquery.form.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/mail-script.js"></script>
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-    
-    <!-- Jquery Plugins, main Jquery -->	
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     
-    </body>
-
-<!-- Mirrored from themewagon.github.io/charityworks/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Oct 2025 15:22:31 GMT -->
+</body>
 </html>
